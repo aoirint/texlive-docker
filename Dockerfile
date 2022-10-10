@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.3-labs
-FROM ubuntu:20.04
+FROM "${BASE_IMAGE:-ubuntu:20.04}"
 
 RUN <<EOF
     set -eux
